@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-title: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+  --font-body: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-subtitle: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-ibrand: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+  --font-maxima: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+  
+  --color-brand-cyan: #7ACAD2;
+  --color-brand-dark: #333333;
+  --color-brand-light: #F6F6F6;
+  --color-brand-mist: #E2F2F4;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    color: #333333;
+    background-color: #F6F6F6;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-title, .font-ibrand, .font-display {
+    font-family: var(--font-title);
+  }
+
+  p, span, a, input, textarea, select, label, .font-body, .font-subtitle, .font-maxima {
+    font-family: var(--font-body);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #7ACAD2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5eb4bd;
+}
+
